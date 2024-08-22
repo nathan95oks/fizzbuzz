@@ -12,6 +12,12 @@ describe("FizzBuzz", () => {
         expect(generarFizzBuzz(3)).toEqual("Fizz");
       });  
 
+      it("generar el Fizz para el 5", () => {
+        expect(generarFizzBuzz(5)).toEqual("Buzz");
+      });  
+
+      
+
       
      
 
