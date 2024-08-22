@@ -16,8 +16,13 @@ describe("FizzBuzz", () => {
         expect(generarFizzBuzz(5)).toEqual("Buzz");
       });  
 
+      it("generar el FizzBuzz para el 3 Y 5", () => {
+        expect(generarFizzBuzz(15)).toEqual("fizzbuzz");
+      });  
+    
       
 
+      
       
      
 
