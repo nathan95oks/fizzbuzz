@@ -12,7 +12,20 @@ function generarFizzBuzz(numero){
         return  "fizzbuzz"
     }
 
-    return numero+""; // concat cad
-   // console.log(numero);
+    // return numero+""; // concat cad
+    //console.log(numero);
+    return numero.toString();
  };
- export default generarFizzBuzz;
+
+
+
+// Función que genera la secuencia hasta el límite especificado
+function generarSecuenciaHasta(limite) {
+    let resultado = [];
+    for (let i = 1; i <= limite; i++) {
+        resultado.push(generarFizzBuzz(i)); // Llamada a generarFizzBuzz para cada número
+    }
+    return resultado.join(" "); // Devuelve la secuencia como una cadena separada por espacios
+}
+
+export { generarFizzBuzz, generarSecuenciaHasta };
